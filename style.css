@@ -1,0 +1,66 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+}
+.card { 
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    border: 1px solid #CBCBCB;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.card:nth-child(odd) {
+    background: #f0f0f0;
+}
+.card-post {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    border-right: 1px solid #CBCBCB;
+    padding: 10px;
+}
+.card-author {
+    padding: 10px;
+    text-align: center;
+}
+.card-detail {
+    margin: 10px;
+}
+h2, h3, h4, p {
+    margin-top: 0;
+}
+.author-name {
+    color: red;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #C83430;
+    color: white;
+    border-radius: 100%;
+}
+.pagination a:hover:not(.active) {
+    background-color: #00000029;
+    border-radius: 100%;
+}
+.time {
+    font-style: italic;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+.avatar {
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
